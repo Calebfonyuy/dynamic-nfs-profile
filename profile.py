@@ -77,6 +77,7 @@ for c_type in clientTypes:
     ifaces.append(c_iface)
     # Initialization script for the clients
     nfsClient.addService(pg.Execute(shell="sh", command="sudo /bin/bash /local/repository/nfs-client.sh"))
+    ip_count = ip_count + 1
 
 
 # The NFS network. All these options are required.
